@@ -1,0 +1,76 @@
+body {
+	font-family: 'consolas', 'sans-serif';
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
+.container {
+	max-width: 90%;
+	width: 400px;
+	height: auto;
+	border-radius: 15px;
+	margin: 20px auto;
+	background-color: #fff;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+}
+
+#avatar {
+	border-radius: 50%;
+	margin: 10px;
+	width: 80px;
+	height: 80px;
+}
+
+#username {
+	font-size: 1.25rem;
+}
+
+#username:hover,
+#avatar:hover {
+	color: rgb(63, 63, 255);
+	cursor: pointer;
+}
+
+#bio {
+	margin-top: 3px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#githubForm {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+#githubUsername,
+#submitBtn {
+	padding: 10px;
+	margin-top: 10px;
+	font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column;
+	}
+
+	#avatar {
+		width: 70px;
+		height: 70px;
+	}
+
+	#username,
+	#bio {
+		text-align: center;
+		/* Center text for smaller screens */
+	}
+}
